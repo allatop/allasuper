@@ -1,0 +1,15 @@
+a=int(input())
+if(a%7==1):
+    print(4)
+if(a%7==2):
+    print(5)
+if(a%7==3):
+    print(6)
+if(a%7==4):
+    print(0)
+if(a%7==5):
+    print(1)
+if(a%7==6):
+    print(2)
+if(a%7==0):
+    print(3)
