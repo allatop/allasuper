@@ -15,3 +15,4 @@ while True:
     else:
         lives = lives - 1
         print ( 'Ответ неверный!' )
+
