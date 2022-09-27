@@ -14,7 +14,10 @@ while True:
         print( 'Ответ верный!' )
     else:
         lives = lives - 1
-        print ( 'Ответ неверный!' )
+        print ( f'Ответ неверный! Жизней осталось {lives}' )
+    if lives == 0 :
+        print (f"Игра закончилась! Ты набрал(а) {count}")
+        break
 
 
 
