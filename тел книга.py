@@ -32,7 +32,7 @@ def sh_contact(dict):
     for i in dict:
         print(i, dict[i])
 
-def delete_contact(name):
+def delete_contact(dict, name):
     if True:
         dict.pop(name)
         print("Контакт успешно удален!")
@@ -44,9 +44,9 @@ def ch_contact(dict, name, number):
         dict[name] = number
     else:
         print('Такого контакта нет')
-        return ch_contact()
 
-def menu():
+
+def menu(dict):
     while True:
         print(f'Выберите действие: \n1. Добавить контанкт \n2. Просмотреть список контактов \n3. Удалить контакт \n4. Изменить номер телефона \n5. Выход')
         p = int(input())
@@ -55,11 +55,11 @@ def menu():
         if p == 2:
             sh_contact(dict)
         if p == 3:
-            delete_contact(get_name())
+            delete_contact(dict, get_name())
         if p == 4:
-            ch_contact(get_name(), get_number())
+            ch_contact(dict, get_name(), get_number())
         if p == 5:
             print("Спасибо за использование")
             break
 dict = {}
-menu()
+menu(dict)
