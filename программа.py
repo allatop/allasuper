@@ -1,6 +1,4 @@
 import random
-
-
 count = 0
 lives = 3
 while True:
