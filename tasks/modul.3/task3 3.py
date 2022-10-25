@@ -1,6 +1,7 @@
 s = input()
-a = " ".join(s).split()
-c = a.index("f")
-o = a[::-1]
-b = o.index("f")
-print(c,len(o) - 1 - b)
+if s.count('f') == 0:
+    print('-1')
+elif s.count('f') == 1:
+    print(s.index('f'))
+else:
+    print(s.index('f'), s.rindex('f'))

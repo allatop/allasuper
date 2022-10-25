@@ -19,5 +19,3 @@ if count / 253 >= 0.5:
     print('правда')
 else:
     print('ложь')
-
-
