@@ -1,8 +1,9 @@
-import библ
+from degree import библ
+
 
 def create(*args, **kwargs):
-    p= []
-    for i, deg in enumerate(args):
+    p = []
+    for i, deg in range(len(args)):
         p.append(f'point_{i} = {библ.gms(deg)}')
     for name, ged in kwargs.items():
         p.append(f'{name}={библ.gms(ged)}')

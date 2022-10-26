@@ -24,7 +24,7 @@ def deg_to_rad(deg):
     :param deg: Градусы
     :return: Радианы
     '''
-    return deg * (pi/180)
+    return deg  * (pi/180)
 
 def rad_to_deg(rad):
     '''
@@ -34,11 +34,12 @@ def rad_to_deg(rad):
     return rad* (180/pi)
 
 def main():
-    print(__name__)
-    print(gms(36.97))
-    print(deg(36, 58, 12))
-    print(deg_to_rad(36.97))
-    print(rad_to_deg(0.6452482244623036))
-    print((dir()))
+    if __name__ == '__main__':
+        print(__name__)
+        print(gms(36.97))
+        print(deg(36, 58, 12))
+        print(deg_to_rad(36.97))
+        print(rad_to_deg(0.6452482244623036))
+        print((dir()))
 if __name__ == "__main__":
     main()
