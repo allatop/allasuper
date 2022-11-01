@@ -1,6 +1,7 @@
 l = input().split()
-p = []
-p.copy(l)
-l[p.index(max(p))] =min(l)
-l[p.index(min(p))] =max(l)
-print (l)
+p = l.copy()
+a = l.index(min(l))
+b = l.index(max(l))
+l[a] = max(p)
+l[b] = min(p)
+print(' '.join(l))
