@@ -1,4 +1,4 @@
 f = input()
-g = len(f)//2
-i = round(len(f)/2)
-print(f[i:]+f[g:])
+i = round(len(f)/2 + 0.5)
+g = round(len(f)/2 + 0.5)
+print(f[i:]+f[:g])
