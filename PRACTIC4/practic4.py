@@ -1,14 +1,21 @@
-mama = 'data.txt'
+name = 'data.txt'
 
 
-def readfile(mama):
-    file = open(mama, encoding="UTF-8")
-    text = file.read().lower()
-    alfa = "йцукенгшщзхъфывапролджэячсмитьбюё"
+def readfile(name):
+    file = open(name, encoding="UTF-8")
+    text = file.read().split(' ')
     for i in range(len(text)):
-        if not (text[i] in alfa):
-            text = text.replace(text[i], '')
-    return text
+        text[i] = text[i].lower()
+    text = ' '.join(j for j in text if j.isalpha())
+    text = text.split(' ')
+    new = set(text)
+
+    return list(new)
 
 
-print(readfile(mama))
+def savefile(name, new):
+    file = open(name, encoding="UTF-8", mode='w')
+    new = sorted(new)
+    file.write("Количество уникальных слов: " + str(len(new)))
+    file.write("\n-----------------------------\n")
+    file.write('\n'.join(new))

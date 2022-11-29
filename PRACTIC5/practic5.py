@@ -1,5 +1,3 @@
-name = 'text'
-
 def readfile(name):
     try:
         file = open(name, encoding="UTF-8")
@@ -10,7 +8,13 @@ def readfile(name):
             raise KeyError
 
     except KeyError:
-        return 'no'
+        return 'Количество чисел не соответствует первому числу!'
+    except ValueError:
+        return 'Файл заполнен неверно!'
+    except FileNotFoundError:
+        return 'Неверное имя файла!'
     return txt[1:]
+
+name = input('Введите имя файла: ')
 
 print(readfile(name))
