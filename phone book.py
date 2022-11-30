@@ -1,9 +1,11 @@
 dict = {}
 
+
 def get_name():
     name = input("Введите имя контакта: ")
     name = name.title().strip()
     return name
+
 
 def get_number():
     number = input("Введите номер телефона: ")
@@ -27,10 +29,12 @@ def contact(dict, name, number):
     print('Контакт добавлен')
     return dict
 
+
 def sh_contact(dict):
     print("Список контактов:")
     for i in dict:
         print(i, dict[i])
+
 
 def delete_contact(dict, name):
     if True:
@@ -38,6 +42,7 @@ def delete_contact(dict, name):
         print("Контакт успешно удален!")
     else:
         print('Такого контакта нет!')
+
 
 def ch_contact(dict, name, number):
     if name in dict:
@@ -48,7 +53,8 @@ def ch_contact(dict, name, number):
 
 def menu(dict):
     while True:
-        print(f'Выберите действие: \n1. Добавить контанкт \n2. Просмотреть список контактов \n3. Удалить контакт \n4. Изменить номер телефона \n5. Выход')
+        print(
+            f'Выберите действие: \n1. Добавить контанкт \n2. Просмотреть список контактов \n3. Удалить контакт \n4. Изменить номер телефона \n5. Выход')
         p = int(input())
         if p == 1:
             contact(dict, get_name(), get_number())
@@ -61,5 +67,6 @@ def menu(dict):
         if p == 5:
             print("Спасибо за использование")
             break
-dict = {}
+
+
 menu(dict)

@@ -1,3 +1,4 @@
+name = input('Введите имя файла: ')
 def readfile(name):
     try:
         file = open(name, encoding="UTF-8")
@@ -15,6 +16,6 @@ def readfile(name):
         return 'Неверное имя файла!'
     return txt[1:]
 
-name = input('Введите имя файла: ')
+
 
 print(readfile(name))
