@@ -1,8 +1,4 @@
-import random
-from game import *
-
-
-def words(name = 'words.txt'):
+def words(name='words.txt'):
     file = open(name, encoding="UTF-8")
     text = file.read().split(' ')
 
@@ -16,6 +12,3 @@ def words(name = 'words.txt'):
 #         else:
 #             print(f'Ваш рекорд:{rec} ')
 #         break
-
-
-

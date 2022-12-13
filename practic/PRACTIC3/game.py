@@ -1,10 +1,14 @@
 from base import *
-
+import random
 kw = "\u25A0"
-word_list = words()
+rec = 0
 
 
-def game(word, lives, rec):
+def game(text):
+    word = random.choice(text)
+    word1 = word.copy()
+    word = ''.join(word)
+    print(word)
     while True:
         strlives = input('Выберите уровень сложности:\n1 - Лекгий (7 жизней)\n2 - Средний (5 жизней)\n3 - Сложный (3 жизни)')
         if strlives == '1':
@@ -14,9 +18,8 @@ def game(word, lives, rec):
         if strlives == '3':
             lives = 3
         break
-    word1 = word.copy()
-    word = "".join(word)
-    print(word)
+
+
     lenw = len(word)
     for i in range(lenw):
         word1[i] = kw
@@ -27,7 +30,6 @@ def game(word, lives, rec):
         letter = input('Введи слово или букву: ')
         if letter == word:
             print('Вы выиграли! Ура')
-            rec += 1
             break
         if len(letter) > 1:
             print('Неверный ответ(')
@@ -42,10 +44,10 @@ def game(word, lives, rec):
             lives -= 1
         if kw not in kwstr:
             print('Вы выиграли! Ура')
-            rec += 1
+
             break
     if lives == 0:
         print(f"Вы проиграли!\nСлово: {word}")
 
 
-print(game("молоко",lives,rec))
+print(game(text))
