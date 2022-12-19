@@ -6,4 +6,5 @@ while len(l) != 0:
         if l[0] == p[i]:
             f.append(l[0])
     l = l[1::]
+f = sorted(f)
 print(' '.join(f))

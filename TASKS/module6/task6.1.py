@@ -3,6 +3,6 @@ p = []
 while len(lst) !=0:
     a = lst[0]
     if a % 2 != 0:
-        p.append(a)
+        p.append(str(a))
     lst = lst[1:]
-print (p)
+print (' '.join(p))

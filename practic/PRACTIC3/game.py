@@ -1,16 +1,16 @@
 from base import *
 import random
-kw = "\u25A0"
 rec = 0
 
-
-def game(text):
-    word = random.choice(text)
-    word1 = word.copy()
+def game():
+    global rec
+    kw = "\u25A0"
+    word = random.choice(words("words.txt"))
+    word1 = ' '.join(word).split()
     word = ''.join(word)
-    print(word)
+    #print(word, word1)
     while True:
-        strlives = input('Выберите уровень сложности:\n1 - Лекгий (7 жизней)\n2 - Средний (5 жизней)\n3 - Сложный (3 жизни)')
+        strlives = input('Выберите уровень сложности:\n1 - Лекгий (7 жизней)\n2 - Средний (5 жизней)\n3 - Сложный (3 жизни)\n')
         if strlives == '1':
             lives = 7
         if strlives == '2':
@@ -18,7 +18,6 @@ def game(text):
         if strlives == '3':
             lives = 3
         break
-
 
     lenw = len(word)
     for i in range(lenw):
@@ -30,6 +29,7 @@ def game(text):
         letter = input('Введи слово или букву: ')
         if letter == word:
             print('Вы выиграли! Ура')
+            rec += 1
             break
         if len(letter) > 1:
             print('Неверный ответ(')
@@ -44,10 +44,21 @@ def game(text):
             lives -= 1
         if kw not in kwstr:
             print('Вы выиграли! Ура')
+            rec += 1
 
             break
     if lives == 0:
         print(f"Вы проиграли!\nСлово: {word}")
 
 
-print(game(text))
+while True:
+    hg = ""
+    regame = input(f'Хотите сыграть в игру {hg}?\n')
+    if regame == 'да':
+        game()
+        record(rec)
+        hg = 'еще раз'
+    if regame == 'нет':
+        break
+
+
