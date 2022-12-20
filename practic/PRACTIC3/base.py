@@ -4,7 +4,9 @@ def words(name):
     file.close()
 
     return text
-#print(words('words.txt'))
+
+
+# print(words('words.txt'))
 
 def record(rec):
     with open('record.txt') as file:
@@ -16,4 +18,3 @@ def record(rec):
             print(f"Молодец! Ты побил свой рекорд: {rec}")
     if rec <= int(text):
         print(f"Текущий рекорд: {rec}\nВаш рекорд: {text} ")
-

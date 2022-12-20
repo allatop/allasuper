@@ -1,6 +1,8 @@
 from base import *
 import random
+
 rec = 0
+
 
 def game():
     global rec
@@ -10,7 +12,8 @@ def game():
     word = ''.join(word)
     #print(word, word1)
     while True:
-        strlives = input('Выберите уровень сложности:\n1 - Лекгий (7 жизней)\n2 - Средний (5 жизней)\n3 - Сложный (3 жизни)\n')
+        strlives = input(
+            'Выберите уровень сложности:\n1 - Лекгий (7 жизней)\n2 - Средний (5 жизней)\n3 - Сложный (3 жизни)\n')
         if strlives == '1':
             lives = 7
         if strlives == '2':
@@ -33,6 +36,7 @@ def game():
             break
         if len(letter) > 1:
             print('Неверный ответ(')
+            lives -= 1
         elif letter in word:
             for let in range(lenw):
                 if word[let] == letter:
@@ -60,5 +64,3 @@ while True:
         hg = 'еще раз'
     if regame == 'нет':
         break
-
-
