@@ -4,6 +4,7 @@ from PIL import Image
 import os
 
 
+
 def Docx(catalog):
     print('Список файлов с расширением .pdf:')
     files = os.listdir(catalog)
