@@ -1,15 +1,19 @@
-words = []
-c = int(input())
-for i in range(c):
-    s = input().split(' ')
-    for j in s:
-        words.append(j)
-words = sorted(words)
+list = []
+c = 0
 
-max = 0
-answer = ''
-for word in words:
-    if words.count(word) > max:
-        answer = word
-        max = words.count(word)
-print(answer)
+col = int(input())
+
+for i in range(col):
+    words = input().split()
+
+    for k in words:
+        list.append(k)
+
+list = sorted(list)
+
+for slovo in list:
+    if list.count(slovo) > c:
+        a = slovo
+        c = list .count(slovo)
+
+print(a)
