@@ -1,0 +1,49 @@
+"Apple iPhone 14 Pro Max 256Gb Deep Purple" | 132990
+ "Apple iPhone 11 128Gb Black" | 47490
+ "Apple iPhone 14 128Gb Blue" | 72990
+ "Apple iPhone 14 128Gb Purple" | 72990
+ "Apple iPhone 11 64Gb White" | 40990
+ "Apple iPhone 11 64Gb Black" | 40990
+ "Apple iPhone 13 128Gb Blue" | 64490
+ "Apple iPhone 12 64Gb Black" | 50990
+ "Apple iPhone 14 Pro 256Gb Space Black" | 115990
+ "Apple iPhone 14 128Gb Midnight" | 72990
+ "Apple iPhone 14 128Gb Starlight" | 72990
+ "Apple iPhone 13 128Gb Starlight" | 64490
+ "Apple iPhone 12 128Gb White" | 55990
+ "Apple iPhone 13 128Gb Midnight" | 64490
+ "Apple iPhone 14 Pro Max 128Gb Deep Purple" | 125490
+ "Apple iPhone 14 Plus 128Gb Blue" | 77990
+ "Apple iPhone 14 Plus 128Gb Purple" | 77990
+ "Apple iPhone 14 Pro 128Gb Gold" | 105990
+ "Apple iPhone 11 128Gb White" | 47490
+ "Apple iPhone 14 Plus 128Gb Midnight" | 77990
+ "Apple iPhone 12 128Gb Blue" | 55990
+ "Apple iPhone 13 128Gb Green" | 64490
+ "Apple iPhone 12 64Gb Blue" | 50990
+ "Apple iPhone 13 128Gb Pink" | 64490
+ "Apple iPhone 14 Pro Max 256Gb Gold" | 132990
+ "Apple iPhone 14 Pro 256Gb Gold" | 115990
+ "Apple iPhone 14 Pro Max 256Gb Space Black" | 132990
+ "Apple iPhone 14 Plus 128Gb Starlight" | 77990
+ "Apple iPhone 12 64Gb Purple" | 50990
+ "Apple iPhone 14 Pro Max 512Gb Deep Purple" | 150990
+ "Apple iPhone 14 Pro 256Gb Silver" | 115990
+ "Apple iPhone 14 Plus 128Gb Red" | 77990
+ "Apple iPhone 14 Pro Max 128Gb Gold" | 125490
+ "Apple iPhone 14 Pro Max 128Gb Space Black" | 125490
+ "Apple iPhone 13 Mini 128Gb Starlight" | 60990
+ "Apple iPhone 12 128Gb Black" | 55990
+ "Apple iPhone 14 Pro Max 256Gb Silver" | 132990
+ "Apple iPhone 12 128Gb Green" | 55990
+ "Apple iPhone 11 64Gb Green" | 40990
+ "Apple iPhone 13 Mini 128Gb Green" | 60990
+ "Apple iPhone 13 Pro Max 256Gb Alpine Green" | 105490
+ "Apple iPhone 14 Pro Max 512Gb Silver" | 157990
+ "Apple iPhone 14 Pro Max 1Tb Deep Purple" | 169990
+ "Apple iPhone 13 Pro 1Tb Green" | 106990
+ "Apple iPhone 14 Plus 512Gb Starlight" | 83990
+ "Apple iPhone 14 Plus 512Gb Purple" | 83990
+ "Apple iPhone 13 Pro 1Tb Sierra Blue" | 106990
+ "Apple iPhone 13 Pro 1Tb Graphite" | 106990
+ 
